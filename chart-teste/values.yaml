@@ -8,3 +8,10 @@ ingress:
 service:
   name: my-service
   port: 80
+autoscaling:
+  enabled: false
+  target:
+    name: my-deployment
+  minReplicas: 1
+  maxReplicas: 5
+  cpuTargetPercentage: 80
