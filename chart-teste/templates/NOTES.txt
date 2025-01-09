@@ -1,1 +1,0 @@
-The service type is {{ .Values.service.type | default "ClusterIP" }}.
