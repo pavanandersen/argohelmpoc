@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: logstash
+  labels:
+    app: logstash
+spec:
+  replicas: {{ .Values.logstash.replicaCount }}
+  selector:
+    matchLabels:
+      app: logstash
+  template:
+    metadata:
+      labels:
+        app: logstash
+    spec:
+      containers:
+      - name: logstash
+        image: "{{ .Values.logstash.image }}:{{ .Values.logstash.tag }}"
+        ports:
+        - containerPort: 5044
+        - containerPort: 9600
+        volumeMounts:
+        - name: config-volume
+          mountPath: /usr/share/logstash/pipeline
+          subPath: logstash.conf
+      volumes:
+      - name: config-volume
+        configMap:
+          name: logstash-config

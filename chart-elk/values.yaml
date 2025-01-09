@@ -1,0 +1,19 @@
+elasticsearch:
+  replicaCount: 1
+  image: "docker.elastic.co/elasticsearch/elasticsearch"
+  tag: "7.17.0"
+  resources: {}
+
+logstash:
+  replicaCount: 1
+  image: "docker.elastic.co/logstash/logstash"
+  tag: "7.17.0"
+  resources: {}
+
+kibana:
+  replicaCount: 1
+  image: "docker.elastic.co/kibana/kibana"
+  tag: "7.17.0"
+  resources: {}
+
+serviceType: ClusterIP
