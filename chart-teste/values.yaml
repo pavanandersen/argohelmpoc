@@ -1,0 +1,2 @@
+replicaCount: 2
+nginxVersion: "1.21.6"
