@@ -6,6 +6,7 @@ ingress:
   enabled: false
   host: "example.com"
 service:
+  type: ClusterIP
   name: my-service
   port: 80
 autoscaling:
