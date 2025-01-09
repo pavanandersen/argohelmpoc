@@ -6,10 +6,12 @@ spec:
   selector:
     app: logstash
   ports:
-  - protocol: TCP
+  - name: beats-port       # Nome para a porta de entrada do Logstash
+    protocol: TCP
     port: 5044
     targetPort: 5044
-  - protocol: TCP
+  - name: http-monitoring  # Nome para a porta de monitoramento do Logstash
+    protocol: TCP
     port: 9600
     targetPort: 9600
   type: {{ .Values.serviceType }}
