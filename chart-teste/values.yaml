@@ -4,3 +4,9 @@ service:
   port: 80
 serviceAccount:
   create: true
+ingress:
+  enabled: false
+  host: "example.com"
+service:
+  name: my-service
+  port: 80
