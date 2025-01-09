@@ -2,3 +2,5 @@ replicaCount: 2
 nginxVersion: "1.21.6"
 service:
   port: 80
+serviceAccount:
+  create: true
