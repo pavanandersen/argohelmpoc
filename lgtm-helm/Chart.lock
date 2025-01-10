@@ -1,0 +1,15 @@
+dependencies:
+- name: grafana
+  repository: file://charts/grafana
+  version: 8.8.2
+- name: loki
+  repository: file://charts/loki
+  version: 6.24.0
+- name: mimir
+  repository: file://charts/mimir
+  version: 5.5.1
+- name: tempo
+  repository: file://charts/tempo
+  version: 1.28.0
+digest: sha256:881c799e0dd6ab840ade943db703e3e19ee5fb447e8f9fd17cb820c0fa658516
+generated: "2025-01-10T15:12:31.006850027-03:00"
