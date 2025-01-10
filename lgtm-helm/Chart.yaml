@@ -5,14 +5,14 @@ version: 0.1.0
 type: application
 dependencies:
   - name: grafana
-    version: <version>
+    version: 8.8.2
     repository: file://charts/grafana
   - name: loki
-    version: <version>
+    version: 6.24.0
     repository: file://charts/loki
   - name: mimir
-    version: <version>
+    version: 5.5.1
     repository: file://charts/mimir
   - name: tempo
-    version: <version>
+    version: 1.28.0
     repository: file://charts/tempo
