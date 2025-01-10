@@ -11,8 +11,8 @@ dependencies:
     version: 6.24.0
     repository: file://charts/loki
   - name: mimir
-    # version: 5.5.1
+    version: 5.5.1
     repository: file://charts/mimir
   - name: tempo
-    # version: 1.28.0
+    version: 1.28.0
     repository: file://charts/tempo
