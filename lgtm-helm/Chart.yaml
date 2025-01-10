@@ -1,0 +1,18 @@
+apiVersion: v2
+name: lgtm
+description: A meta-chart to deploy Grafana, Loki, Mimir, and Tempo
+version: 0.1.0
+type: application
+dependencies:
+  - name: grafana
+    version: <version>
+    repository: file://charts/grafana
+  - name: loki
+    version: <version>
+    repository: file://charts/loki
+  - name: mimir
+    version: <version>
+    repository: file://charts/mimir
+  - name: tempo
+    version: <version>
+    repository: file://charts/tempo

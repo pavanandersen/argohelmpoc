@@ -1,0 +1,14 @@
+grafana:
+  adminPassword: admin
+
+loki:
+  config:
+    table_manager:
+      retention_deletes_enabled: true
+
+mimir:
+  replicas: 2
+
+tempo:
+  server:
+    http_listen_port: 3100
